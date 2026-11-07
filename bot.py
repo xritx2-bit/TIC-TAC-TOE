@@ -6,7 +6,7 @@ from discord import app_commands
 # BOT CONFIGURATION
 # ==============================
 
-TOKEN = "MTU2ODI2Mjk2NjMyNjA3MTI5Ng.GEfTAb.1Sbs4-Be_LBV-jAVeqzdYxsbz3UHNvmM6XJ0HM"
+TOKEN = "Enter your bot token here"
 
 intents = discord.Intents.default()
 

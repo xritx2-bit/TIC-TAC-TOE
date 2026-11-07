@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -6,7 +7,7 @@ from discord import app_commands
 # BOT CONFIGURATION
 # ==============================
 
-TOKEN = "Enter your bot token here"
+TOKEN = os.getenv("DISCORD_TOKEN", "Enter your bot token here")
 
 intents = discord.Intents.default()
 
@@ -359,4 +360,7 @@ async def on_ready():
 # RUN BOT
 # ==============================
 
+from keep_alive import keep_alive
+
+keep_alive()
 bot.run(TOKEN)
